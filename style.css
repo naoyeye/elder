@@ -17,6 +17,10 @@ body:before {
   background: rgba(9, 130, 10, 0.4);
 }
 
+#hidden-pic {
+  display: none;
+}
+
 #overlay {
   color: white;
   width: 100%;
