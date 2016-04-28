@@ -1,65 +1,131 @@
 
 body {
-	position: relative;
-	padding: 0;
-	margin: 0;
-	background: url('image.jpg') 20% center no-repeat;
-	background-size: cover;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: url('image.jpg') 20% center no-repeat;
+  background-size: cover;
 }
 
 body:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(9, 130, 10, 0.4);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(9, 130, 10, 0.4);
 }
 
 #overlay {
-	color: white;
-	width: 100%;
+  color: white;
+  width: 100%;
 }
 
 #container {
-	position: relative;
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 30px 0;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 #overlay a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #overlay a:hover {
-	opacity: .8;
+  opacity: .8;
 }
 
 #buttons {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 h1 {
-	margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 button {
-	background-color: transparent;
-	color: white;
-	border: 1px solid white;
-	border-radius: 3px;
-	margin: 10px!important;
-	padding: 5px 10px;
-	text-align: left;
-	outline: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin: 10px!important;
+  padding: 5px 10px;
+  text-align: left;
+  outline: none;
+}
+
+.audiojs {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.audiojs .play-pause {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0 auto;
+  float: none;
+  overflow: hidden;
+  border: none;
+}
+
+.play-pause p {
+  background: none;
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+  color: #333;
+  line-height: 100px;
+}
+
+.play-pause .play {
+  /*background: red;*/
+
+  background: none;
+}
+
+.play-pause .play:after {
+  content: '播放音乐';
+}
+
+.play-pause .pause {
+  background: none;
+  /*background: green;*/
+}
+
+.play-pause .pause:after {
+  content: '暂停音乐';
+}
+
+.play-pause .loading {
+  background: none;
+  /*background: yellow;*/
+}
+
+.play-pause .loading:after {
+  content: '加载中';
+}
+
+.audiojs .scrubber,
+.audiojs .time {
+  display: none;
+}
+
+button .audiojs {
+  display: none;
 }
 
 button:hover {
-	background: #ffc823;
-	color: #fff;
-	border: 1px solid #ffc823;
+  background: #ffc823;
+  color: #fff;
+  border: 1px solid #ffc823;
 }
 
