@@ -13,7 +13,7 @@ $(function() {
 
     var iswechat = !!ua.match(/micromessenger/);;
 
-    if (!iswechat) {
+    if (iswechat) {
         $('#tips').show();
     }
 })
