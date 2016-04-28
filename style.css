@@ -21,6 +21,14 @@ body:before {
   display: none;
 }
 
+#tips {
+  display: none;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(0,0,0,0.4);
+}
+
 #overlay {
   color: white;
   width: 100%;
